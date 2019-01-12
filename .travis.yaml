@@ -6,4 +6,4 @@ before_install:
   - docker build -f dev.Dockerfile -t jnaputi/docker-reactor .
 
 script:
-  - docker run jnaputi/docker-reactor run test -- --coverage
+  - docker run jnaputi/docker-reactor npm run test -- --coverage
